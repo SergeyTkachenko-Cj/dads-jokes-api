@@ -1,0 +1,58 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: greenyellow;
+    background: saddlebrown;
+}
+
+body {
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    box-shadow: 2px 2px 2px #383838;
+    background: #362435;
+}
+
+.btn_cover {
+    position: absolute;
+    z-index: -1;
+    top: 5%; left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.smile_btn {
+    width: 80px;
+    height: 80px;
+    font-size: 150%;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #383838;
+    cursor: pointer;
+    outline: none;
+    background: #362435;
+}
+
+.smile_btn:active {
+    width: 77px;
+    height: 77px;
+    font-size: 145.5%;
+}
+
+.smile_btn_tooltip {
+    position: absolute;
+    display: none;
+    top: 0; left: 70%;
+    width: 100%;
+    font-size: 50%;
+}
+
+.smile_btn:hover + .smile_btn_tooltip {
+    display: block;
+}
